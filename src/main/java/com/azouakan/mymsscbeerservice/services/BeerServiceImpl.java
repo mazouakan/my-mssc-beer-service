@@ -6,10 +6,12 @@ import com.azouakan.mymsscbeerservice.web.controller.NotFoundException;
 import com.azouakan.mymsscbeerservice.web.mappers.BeerMapper;
 import com.azouakan.mymsscbeerservice.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
 @RequiredArgsConstructor
+@Service
 public class BeerServiceImpl implements BeerService {
 
     private final BeerRepository beerRepository;
